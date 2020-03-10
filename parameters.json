@@ -1,0 +1,48 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworkResourceGroupName": {
+            "value": "S061-NOE-network"
+        },
+        "virtualNetworkName": {
+            "value": "S061-NOE-vnet"
+        },
+        "subnetName": {
+            "value": "S061-NOE-sql-mi-subnet"
+        },
+        "skuName": {
+            "value": "GP_Gen5"
+        },
+        "skuEdition": {
+            "value": "GeneralPurpose"
+        },
+        "storageSizeInGB": {
+            "value": 256
+        },
+        "vCores": {
+            "value": 8
+        },
+        "licenseType": {
+            "value": "BasePrice"
+        },
+        "hardwareFamily": {
+            "value": "Gen5"
+        },
+        "dnsZonePartner": {
+            "value": ""
+        },
+        "timezoneId": {
+            "value": "Romance Standard Time"
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        },
+        "proxyOverride": {
+            "value": "Redirect"
+        },
+        "publicDataEndpointEnabled": {
+            "value": false
+        }
+    }
+}
