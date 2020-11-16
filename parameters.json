@@ -2,47 +2,113 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "virtualNetworkResourceGroupName": {
-            "value": "S061-NOE-network"
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
         },
-        "virtualNetworkName": {
-            "value": "S061-NOE-vnet"
-        },
-        "subnetName": {
-            "value": "S061-NOE-sql-mi-subnet"
-        },
-        "skuName": {
-            "value": "GP_Gen5"
-        },
-        "skuEdition": {
+        "tier": {
             "value": "GeneralPurpose"
         },
-        "storageSizeInGB": {
-            "value": 256
+        "skuName": {
+            "value": "GP_Gen5_8"
         },
-        "vCores": {
-            "value": 8
+        "maxSizeBytes": {
+            "value": 34359738368
+        },
+        "sampleName": {
+            "value": ""
         },
         "licenseType": {
             "value": "BasePrice"
         },
-        "hardwareFamily": {
-            "value": "Gen5"
+        "readScaleOut": {
+            "value": "Disabled"
         },
-        "dnsZonePartner": {
+        "zoneRedundant": {
+            "value": false
+        },
+        "numberOfReplicas": {
+            "value": 0
+        },
+        "enableADS": {
+            "value": false
+        },
+        "allowAzureIps": {
+            "value": false
+        },
+        "allowClientIp": {
+            "value": false
+        },
+        "clientIpValue": {
+            "value": "42.111.73.219"
+        },
+        "databaseTags": {
+            "value": {}
+        },
+        "serverTags": {
+            "value": {}
+        },
+        "enableVA": {
+            "value": false
+        },
+        "enablePrivateEndpoint": {
+            "value": false
+        },
+        "privateEndpointNestedTemplateId": {
+            "value": "pe-3294ce32-55fe-4379-a370-705ee314302f"
+        },
+        "privateEndpointSubscriptionId": {
             "value": ""
         },
-        "timezoneId": {
-            "value": "Romance Standard Time"
+        "privateEndpointResourceGroup": {
+            "value": ""
         },
-        "collation": {
-            "value": "SQL_Latin1_General_CP1_CI_AS"
+        "privateEndpointName": {
+            "value": ""
         },
-        "proxyOverride": {
-            "value": "Redirect"
+        "privateEndpointLocation": {
+            "value": ""
         },
-        "publicDataEndpointEnabled": {
-            "value": false
+        "privateEndpointSubnetId": {
+            "value": ""
+        },
+        "privateLinkServiceName": {
+            "value": ""
+        },
+        "privateLinkServiceServiceId": {
+            "value": ""
+        },
+        "privateEndpointVnetSubscriptionId": {
+            "value": ""
+        },
+        "privateEndpointVnetResourceGroup": {
+            "value": ""
+        },
+        "privateEndpointVnetName": {
+            "value": ""
+        },
+        "privateEndpointSubnetName": {
+            "value": ""
+        },
+        "enablePrivateDnsZone": {
+            "value": true
+        },
+        "privateEndpointDnsRecordUniqueId": {
+            "value": "3294ce32-55fe-4379-a370-705ee3143032"
+        },
+        "privateEndpointTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0115811/DeploymentTemplates/PrivateEndpoint.json"
+        },
+        "privateDnsForPrivateEndpointTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0115811/DeploymentTemplates/PrivateDnsForPrivateEndpoint.json"
+        },
+        "privateDnsForPrivateEndpointNicTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0115811/DeploymentTemplates/PrivateDnsForPrivateEndpointNic.json"
+        },
+        "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+            "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0115811/DeploymentTemplates/PrivateDnsForPrivateEndpointIpConfig.json"
+        },
+        "clientIpRuleName": {
+            "value": "ClientIp-2020-3-9_12-54-44"
         }
     }
 }
